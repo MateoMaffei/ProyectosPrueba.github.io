@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Estilos Generales*/
+html,body{
+    height: 100%;
+}
+body, html{
+    font-family: cursive;
+    line-height: 1.3em;
+    font-size: 1em; 
+    background-color: rgb(35, 67, 88);
+}
+.container{
+    width: 90%;
+    max-width: 2500px;
+    background: #ececec;
+    margin: 20px auto 20px auto;
+    border-radius: 20px;
+}
+/*Cabecera*/
+header{
+    width: 100%;
+    float: left;
+}
+header h1{
+    border:8px solid black;
+    border-radius: 0px 35px;
+    box-sizing: border-box;
+    margin: 15px;
+    float: left;
+}
+header h2{
+    float: left;
+    font-size: 1.7em;
+    margin-top: 60px;
+    margin-left: 80px;
+    text-decoration: underline;
+}
+/*Menu de navegacion*/
+nav{
+    width: 100%;
+    clear: both;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    margin-bottom: 30px;
+    border-top:7px solid rgb(35, 67, 88) ;
+}
+nav ul li{
+    text-align: center;
+    width: 25%;
+    float: left;
+    background-color: #ececec;
+    border-right: 1px #d3d3d3 solid;
+    box-sizing: border-box;
+}
+nav ul li.SinBorde{
+    border-right:none;
+}
+nav ul li a:link, nav ul li a:visited{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 0;
+}
+nav ul li:hover,nav ul li.actual{
+    background: #c2c2c2;
+}
+nav ul li ul{
+    width: 100%;
+}
+/*Sub Menu*/
+
+nav ul li ul{
+    border-top: none;
+    width: 302px;
+    margin-top: 1px;
+    position: absolute;
+    display: none;
+}
+nav ul li ul li{
+    background: rgb(168, 167, 167);
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+
+/*Articulo en oferta y link de fb*/
+aside{
+    width: 30%;
+    float: right;
+    margin: 20px 20px 0 20px;
+    background-color: #ececec;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+aside article{
+    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 35px;
+}
+aside article .Facebook, aside article .Instagram, aside article .Twitter, aside article .Youtube {
+    width: 37%;
+    border: 2px solid gray;
+    border-radius: 5px;
+    float: right;
+    text-align: center;
+    padding: 1% 2%;
+    text-decoration: none;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    font-size: 20px;
+    color: white;
+}
+aside article .Facebook{
+    background-color: #3b5998;
+}
+aside article .Instagram{
+    background-image: url(instagram-icon-color-27.jpg);
+}
+aside article .Twitter{
+    background-color: #00aece;
+}
+aside article .Youtube{
+    background-color: #c4302b;
+}
+aside article a{
+    text-decoration: none;
+    color: black;
+}
+aside article h1{
+    background-color: #d3d3d3;
+    border: 1px solid #645f60;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    padding: 5px 0;
+}
+aside article p{
+    text-align: center;
+}
+aside article img{
+    float: left;
+    padding-left: 20px;
+    width: 90%;
+}
+aside article iframe{
+    float: left;
+    margin-left: 35%;
+}
+
+/*Elemento principal*/
+section{
+    padding: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #d3d3d3;
+}
+section h1{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+section p{
+    line-height: 1.5em; 
+}
+.mapa{
+    border: 2px solid #fff;
+    width: 780px;
+    height: 450px;
+    box-shadow:1px 2px 5px #fff;
+    -moz-box-shadow:1px 2px 5px #fff;
+    -webkit-box-shadow:1px 2px 5px #fff;
+}
+section article h1{
+    text-align: center;
+    text-decoration: underline;
+}
+section article img{
+    width: 30%;
+    float: left;
+    margin: 0 20px 0 0;
+}
+section article h2{
+    margin: 15px 0;
+    text-decoration: underline;
+}
+/*Boton WhatsApp*/
+.enlace-whatsapp{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 50%;
+}
+.enlace-whatsapp img{
+    width: 150px;
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+}
+/*Productos*/
+.producto{
+    border: 2px solid #645f60;
+    border-radius: 10px;
+    width: 760px;
+    height: 300px;
+    margin: 10px;
+}
+.producto h1{
+    padding-top: 15px;
+}
+.producto p, .producto ul{
+    width: 500px;
+    padding-left:40px ;
+}
+.producto img{
+    position: relative;
+    float: right;
+    width: 200px;
+}
+.Pago{
+   position: relative;
+   top: -30px;
+   left: 325px;
+}
+/*Aviso Legal*/
+footer{
+    width: 100%;
+    clear: both;
+    text-align: center;
+    padding-bottom: 0px;
+}
+footer p{
+    font-size: 0.7em;
+    color:#645f60;
+}
+footer a:link, footer a:visited{
+    color: #645f60;
+}
+footer a:hover{
+    color: #645f60;
+    text-decoration: none;
+}
